@@ -1,0 +1,41 @@
+<robot name="robotic_arm">
+
+  <!-- Global Material Definitions -->
+  <material name="red">
+    <color rgba="1.0 0.0 0.0 1.0"/> <!-- its red -->
+  </material>
+  <material name="blue">
+    <color rgba="0.0 0.0 1.0 1.0"/> <!-- Blue -->
+  </material>
+
+  <material name="green">
+    <color rgba="0.0 1.0 0.0 1.0"/> <!-- green -->
+  </material>
+
+
+
+  <link name="angelasbase">
+
+    <visual>
+      <geometry>
+        <box size="0.3 0.3 0.1"/>
+      </geometry>
+      <material name = "red" />
+    </visual>
+
+    <collision>
+      <geometry>
+        <box size="0.3 0.3 0.1"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <mass value="5.0"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.1" izz=
+    </inertial>
+
+
+
+  </link>
+
+</robot>
